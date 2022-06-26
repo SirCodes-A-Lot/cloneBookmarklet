@@ -2,7 +2,7 @@
 How to set up:\
 Open bookmark manager\
 Add bookmark\
-copy and paste JS into the URL field\
+copy and paste JS into the URL field
 
 # How to use:
 click clone on an odl event\
