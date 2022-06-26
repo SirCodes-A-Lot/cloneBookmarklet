@@ -8,3 +8,7 @@ How to use:\
 click clone on an odl event\
 click the bookmark you've just made\
 (This is a work in progress, it doesn't do much yet and hasn't really been tested)\
+\
+What it does:\
+removes "clone of " text\
+scrolls to time and date
