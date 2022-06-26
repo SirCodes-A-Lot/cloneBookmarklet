@@ -6,6 +6,9 @@ javascript: (() => {
 
     const LEADER_SECTION_ID = "edit-group-leader-information";
 
+    const READY_TO_PUBLISH_ID = "edit-field-ready-for-publication-value";
+    const PUBLISH_CHECKBOX_ID = "edit-status-value";
+
     const startDateElement = document.getElementById("edit-field-event-start-date-0-value-date");
     const endDateElement =  document.getElementById("edit-field-event-end-date-0-value-date");
     const cutOffDateElement =  document.getElementById("edit-field-event-purchase-cut-off-0-value-date");
@@ -31,6 +34,11 @@ javascript: (() => {
         cutOffDateElement.value = newDate;
     };
 
+    function checkReadyToPublishAndPublish(){
+        document.getElementById(READY_TO_PUBLISH_ID).click();
+        document.getElementById(PUBLISH_CHECKBOX_ID).click();
+    };
+
     function scrollToLeader() {
         document.getElementById(LEADER_SECTION_ID).scrollIntoView({
             behavior: 'smooth'
@@ -43,5 +51,6 @@ javascript: (() => {
     } else {
         makeAllDatesStartDate();
         scrollToLeader();
+        checkReadyToPublishAndPublish();
     };
   })();
